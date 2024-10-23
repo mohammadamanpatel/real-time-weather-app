@@ -63,6 +63,95 @@ Real Time Weather Monitoring
     ├── package.json
     └── server.js
 ```
+Installation
+
+1. Clone the repository:
+
+   ```
+   git clone https://github.com/mohammadamanpatel/real-time-weather-app/
+   ```
+
+2. For the backend, navigate to the backend directory and install the dependencies:
+
+   ```
+   cd real-weather-backend
+   npm install
+   ```
+
+3. For the frontend, navigate to the frontend directory and install the dependencies:
+
+   ```
+   cd ../real-weather-frontend
+   npm install
+   ```
+
+Running the Applications
+
+Backend
+
+To start the backend server, ensure your MongoDB instance is running, and use the following command:
+
+```
+npm start
+```
+
+This will start the backend server on the port specified in the `.env` file.
+
+Frontend
+
+To start the frontend development server, navigate to the frontend directory and use the following command:
+
+```
+npm run dev
+```
+
+This will start the application on [http://localhost:5173]. You can view it in your web browser.
+
+Building for Production
+
+Backend
+
+To build the backend for production, make sure you have set the appropriate environment variables in the `.env` file. Then, you can run:
+
+```
+npm run build
+```
+
+Frontend
+
+To build the frontend application for production, run:
+
+```
+npm run build
+```
+
+This command will create an optimized production build in the `dist` folder.
+
+Linting
+
+To check for linting errors for both frontend and backend, use the following commands:
+
+Frontend:
+
+```
+npm run lint
+```
+
+Backend (if you have a lint script in the backend `package.json`):
+
+```
+npm run lint
+```
+
+Previewing the Build
+
+Frontend
+
+To preview the production build locally, run:
+
+```
+npm run preview
+```
 
 ## Features
 
