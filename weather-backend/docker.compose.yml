@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  rule-engine-backend:
+    build: .
+    ports:
+      - "${PORT}:${PORT}"  # Map the container's port to the host's port
+    environment:
+      - MONGO_URL=${MONGO_URL}  # Use the environment variable from your .env file
+      - PORT=${PORT}  # Pass the port to the container
+      - OPENWEATHER_API_KEY=${OPENWEATHER_API_KEY}  # Pass the OPENWEATHER_API_KEY to the fetch Fn
+      - MAIL_HOST=${MAIL_HOST}  # Pass the MAIL_HOST to the mail-sender
+      - MAIL_PASS=${MAIL_PASS}  # Pass the MAIL_PASS to the mail-sender
+      - MAIL_USER=${MAIL_USER}  # Pass the MAIL_USER to the mail-sender
+    volumes:
+      - .:/usr/src/app  # Mount the current directory to the app directory in the container
+
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db  # Persist MongoDB data
+
+volumes:
+  mongo-data:
