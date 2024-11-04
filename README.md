@@ -63,7 +63,7 @@ Real Time Weather Monitoring
     └── server.js
 ```
 
-```Installation
+Installation
 
 1. Clone the repository:
 
