@@ -1,11 +1,10 @@
-
 ---
 
-# Weather Monitoring
+Weather Monitoring
 
 This Weather Monitoring project allows users to view detailed weather information and daily summaries. Built with React and Vite, the dashboard integrates with weather APIs and features Celsius temperature conversion, along with additional weather metrics. It also includes a server-side component for managing user-specific weather summaries and alert thresholds.
 
-## Folder Structure
+Folder Structure
 
 ```
 Real Time Weather Monitoring
@@ -153,14 +152,14 @@ To preview the production build locally, run:
 npm run preview
 ```
 
-## Features
+Features
 
 - Temperature Conversion: All temperature data is converted to Celsius from Kelvin or Fahrenheit.
 - Daily Weather Summaries: Saves and displays daily weather summaries including temperature, humidity, wind speed, and dominant conditions.
 - Email Alerts: Users can set thresholds for temperature and weather conditions, triggering email alerts when these thresholds are exceeded.
 - Backend Integration: Includes a MongoDB database to store user-specific weather summaries.
 
-## Backend Functionality
+Backend Functionality
 
 WeatherSummary Model
 
@@ -199,7 +198,7 @@ const DBConnection = async () => {
 
 After setting up MongoDB, you can run the backend, and Mongoose will automatically handle connecting to the database and applying any schema logic.
 
-## Sample Schema
+Sample Schema
 
 Here’s an example of a Mongoose schema used in the project:
 
@@ -219,12 +218,12 @@ module.exports = mongoose.model('WeatherSummary', WeatherSummarySchema);
 
 This schema defines a `WeatherSummary` with fields for the date, temperature, humidity, wind speed, and weather condition, along with automatic timestamps.
 
-## API Routes
+API Routes
 
 - Set Thresholds: Users can set temperature and weather condition thresholds for email alerts.
 - Fetch Weather Summaries: Fetches weather data for multiple cities and stores the daily summaries in the database.
 
-## Environment Variables
+Environment Variables
 
 The project requires the following environment variables:
 
@@ -236,7 +235,7 @@ MAIL_PASS="SMTP server password"
 MAIL_USER="SMTP server user"
 ```
 
-## Running the Backend
+Running the Backend
 
 To start the backend:
 
