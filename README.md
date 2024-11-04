@@ -62,7 +62,8 @@ Real Time Weather Monitoring
     ├── package.json
     └── server.js
 ```
-Installation
+
+```Installation
 
 1. Clone the repository:
 
@@ -169,7 +170,7 @@ Weather Controller
 
 The weather controller manages key operations such as fetching data, saving summaries, and sending alerts when weather thresholds are breached. It includes functions to check if a daily summary exists, save new or updated summaries, and send email alerts if thresholds are exceeded.
 
-## MongoDB & Mongoose Setup
+MongoDB & Mongoose Setup
 
 This project uses MongoDB as the database, with Mongoose for schema definitions and managing the database connection. You can set it up as follows:
 
