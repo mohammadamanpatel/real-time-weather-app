@@ -4,7 +4,7 @@ Weather Monitoring
 
 This Weather Monitoring project allows users to view detailed weather information and daily summaries. Built with React and Vite, the dashboard integrates with weather APIs and features Celsius temperature conversion, along with additional weather metrics. It also includes a server-side component for managing user-specific weather summaries and alert thresholds.
 
-Folder Structure
+Folder Structure:-
 
 ```
 Real Time Weather Monitoring
@@ -246,3 +246,4 @@ npm run server
 Ensure the environment variables are properly configured before running the server.
 
 --- 
+
