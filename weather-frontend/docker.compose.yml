@@ -7,9 +7,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - "5173:5173" # Map the host port to the container port
-    environment:
-      # Add any environment variables you need here
-      VITE_API_URL: ${VITE_API_URL} # Example of passing an environment variable from .env
     volumes:
       - .:/usr/src/app # Bind mount for live reloading during development (optional)
 
