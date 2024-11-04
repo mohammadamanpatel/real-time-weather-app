@@ -1,9 +1,9 @@
 
 ---
 
-# Weather Dashboard Assignment
+# Weather Monitoring
 
-This Weather Dashboard project allows users to view detailed weather information and daily summaries. Built with React and Vite, the dashboard integrates with weather APIs and features Celsius temperature conversion, along with additional weather metrics. It also includes a server-side component for managing user-specific weather summaries and alert thresholds.
+This Weather Monitoring project allows users to view detailed weather information and daily summaries. Built with React and Vite, the dashboard integrates with weather APIs and features Celsius temperature conversion, along with additional weather metrics. It also includes a server-side component for managing user-specific weather summaries and alert thresholds.
 
 ## Folder Structure
 
@@ -245,9 +245,5 @@ npm run server
 ```
 
 Ensure the environment variables are properly configured before running the server.
-
-## Contributing
-
-If you would like to contribute to this project, please fork the repository and submit a pull request. All contributions are welcome!
 
 --- 
